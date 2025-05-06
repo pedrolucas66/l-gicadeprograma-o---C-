@@ -1,0 +1,25 @@
+//Leia 2 valores inteiros e armazene-os nas variáveis A e B. Efetue a soma de A e B atribuindo o seu resultado na variável X.
+
+using System;
+using System.Globalization;
+namespace ts
+{
+    class Program
+    
+    {
+        static void Main(string[] args)
+        {
+            int A, B, x;
+            
+            Console.WriteLine("Informe dois números para fazer a conta: ");
+            A = int.Parse(Console.ReadLine());
+            B = int.Parse(Console.ReadLine());
+            x = A + B;
+
+            Console.WriteLine("x = " +x);
+            
+        }
+    }
+}
+ 
+            
