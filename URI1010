@@ -1,0 +1,29 @@
+using System;
+using System.Globalization;
+namespace md
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        int p1, v1, n1;
+        int p2, v2, n2;
+        int valorT;
+
+        string[] valT1 = Console.ReadLine().Split(' ');
+        p1 = int.Parse(valT1[0]);
+        v1 = int.Parse(valT1[1]);
+        n1 = int.Parse(valT1[2]);
+
+        string[] valT2 = Console.ReadLine().Split(' ');
+        p2 = int.Parse(valT2[0]);
+        v2 = int.Parse(valT2[1]);
+        n2 = int.Parse(valT2[2]);
+        valorT = (int)(v1 * n1) + (v2 * n2);
+        Console.WriteLine("O valor total é R$: " + valorT.ToString("F2", CultureInfo.InvariantCulture));
+
+
+        }
+    }
+}
+
